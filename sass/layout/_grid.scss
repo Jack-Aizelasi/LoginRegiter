@@ -1,0 +1,48 @@
+// @Description: layout.scss--布局样式
+// @Author: Alone Walker
+// @Date:   2019-02-18 15:20:16
+// @Last Modified by:   Alone Walker
+// @Last Modified time: 2019-02-27 21:24:40
+// @Email: 249483010@qq.com
+// @Url: ''
+
+// flex 垂直居中
+ @mixin layout-flex-Horizontal($flex:flex,$flex-flow: row wrap,$justify-content: flex-start,$align-content:flex-start){
+  display:$flex;
+  flex-flow:$flex-flow;
+  justify-content:$justify-content;
+  align-content:$align-content;
+
+  -webkit-flex-flow:$flex-flow;
+  -webkit-justify-content:$justify-content;
+  -webkit-align-content:$align-content;
+
+  -ms-flex-flow:$flex-flow;
+  -ms-justify-content:$justify-content;
+  -ms-align-content:$align-content;
+}
+
+@mixin layout-Space-Between($flex:flex,$flex-flow: row wrap,$justify-content: space-between){
+  display:$flex;
+  flex-flow:$flex-flow;
+  justify-content:$justify-content;
+
+  -webkit-flex-flow:$flex-flow;
+  -webkit-justify-content:$justify-content;
+
+  -ms-flex-flow:$flex-flow;
+  -ms-justify-content:$justify-content;
+}
+
+@mixin layout-flex-Vertically($flex:flex,$flex-flow:column wrap){
+  display:$flex;
+  flex-flow:$flex-flow;
+  -webkit-flex-flow:$flex-flow;
+  -ms-flex-flow:$flex-flow;
+}
+
+._wrapper{width:100%;}
+._container{
+    width:1200px;margin: 0 auto;&._content{background:#fff;}
+    ._container-customer{padding: 0 20px 0 20px;}
+}

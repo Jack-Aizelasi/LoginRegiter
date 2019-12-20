@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, user-scalable=no, width=device-width"
+    />
+    <meta
+      name="description"
+      content="吉林省云知科技应用有限公司，为您提供软件开发，小程序开发，软件设计等服务，企业信息化建设解决方案供应商，我们专注于以全方位一站式的定制开发服务为您解决管理系统、网站、APP或者微信端的个性需求。"
+    />
+    <meta
+      name="keywords"
+      content="软件开发，小程序开发，网页设计，网页开发，技术支持，互联网，软件制作，技术咨询，计算机软件"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>登录</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/reset.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/login.css" />
+    <link rel="stylesheet" type="text/css" href="css/animsition.css" />
+  </head>
+  <body>
+    <div class="wp animsition">
+      <div class="boardLogin">
+        <a href="#" class="logo"><img src="images/loginLogo.png"/></a>
+        <div class="login-top">
+          <span class="login-icon login-icon-1"
+            ><img src="images/provider-qq.png" alt=""
+          /></span>
+          <span class="login-icon login-icon-2"
+            ><img src="images/provider-facebook.png" alt=""
+          /></span>
+          <span class="login-icon login-icon-3"
+            ><img src="images/provider-wechat.png" alt=""
+          /></span>
+          <span class="login-icon login-icon-4"
+            ><img src="images/provider-sina.png" alt=""
+          /></span>
+          <h5>第三方账号直接登录</h5>
+          <h6>
+            <span class="left"></span>
+            <center>or</center>
+            <span class="right"></span>
+          </h6>
+        </div>
+
+        <form>
+          <div class="inpGroup">
+            <span class="loginIco1"></span
+            ><input type="text" name="" placeholder="请输入您的用户名" />
+          </div>
+          <div class="prompt"><p class="error">用户名错误或不存在</p></div>
+          <div class="inpGroup">
+            <span class="loginIco2"></span
+            ><input type="password" name="" placeholder="请输入您的密码" />
+          </div>
+          <div class="prompt"><p class="success">输入正确</p></div>
+        </form>
+        <div class="login-bottom">
+          <div class="login-bottom-item">
+            <input type="checkbox" name="" id="rememberMe" class="left" />
+            <span>记住密码</span>
+          </div>
+          <div class="login-bottom-item">
+            <a href="register.html" target="_blank">免费注册</a>
+          </div>
+          <div class="login-bottom-item">
+            <a href="forget-password.html" target="_blank">忘记密码？</a>
+          </div>
+          <div class="clear"></div>
+          <!-- <button class="submit">登录</button>-->
+          <a href="scanboard.html" class="animsition-link submit">登录</a>
+          <div class="toggle-loginType">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="particles-js"></div>
+  </body>
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.animsition.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/app.js"></script>
+  <script type="text/javascript">
+    $('.animsition').animsition({
+      inClass: 'fade-in',
+      outClass: 'fade-out',
+      inDuration: 800,
+      outDuration: 1000,
+      linkElement: '.animsition-link',
+      loading: false,
+      loadingParentElement: 'body',
+      loadingClass: 'animsition-loading',
+      unSupportCss: [
+        'animation-duration',
+        '-webkit-animation-duration',
+        '-o-animation-duration'
+      ],
+      overlay: false,
+      overlayClass: 'animsition-overlay-slide',
+      overlayParentElement: 'body'
+    });
+  </script>
+</html>
